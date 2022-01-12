@@ -9,36 +9,44 @@ import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Socials from "./components/Socials";
+import NPP from "./assets/img/applications/1.jpg";
+import MiningOp from "./assets/img/applications/2.jpg";
+import MilitaryOp from "./assets/img/applications/3.jpg";
+import SpaceOp from "./assets/img/applications/4.jpg";
+import NavalShip from "./assets/img/applications/5.jpg";
+import HealthCare from "./assets/img/applications/6.jpg";
 
 function App() {
   const applicationLinks = [
     {
-      title: "Threads",
-      caption: "Illustration",
+      title: "Energy/Power Systems",
+      caption: "including Nuclear Power Plants",
+      image: NPP,
     },
     {
-      title: "Explore",
-      caption: "Graphic Design",
+      title: "Mining Operations",
+      caption: " ",
+      image: MiningOp,
     },
     {
-      title: "Finish",
-      caption: "Identity",
+      title: "Military Operations",
+      caption: " ",
+      image: MilitaryOp,
     },
     {
-      title: "Lines",
-      caption: "Branding",
+      title: "Space Exploration",
+      caption: " ",
+      image: SpaceOp,
     },
     {
-      title: "Southwest",
-      caption: "Website Design",
+      title: "Naval Ships/ Vessel Monitoring",
+      caption: " ",
+      image: NavalShip,
     },
     {
-      title: "Window",
-      caption: "Photography",
-    },
-    {
-      title: "Pizza",
-      caption: "I love pizza!",
+      title: "Health Care Applications",
+      caption: " ",
+      image: HealthCare,
     },
   ];
 
@@ -61,8 +69,8 @@ function App() {
       <div className="App">
         <NavBar />
         <Header />
-        <Devices />
-        <Applications />
+        <Devices deviceLinks={deviceLinks} />
+        <Applications applicationLinks={applicationLinks} />
         <About />
         <Team />
         <Contact />

@@ -1,0 +1,7 @@
+ // <Header />
+      // <Devices deviceLinks={deviceLinks} />
+      // <Applications applicationLinks={applicationLinks} />
+      // <About />
+      // <Team />
+      // <Contact />
+      // <Footer />

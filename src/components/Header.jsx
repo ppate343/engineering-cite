@@ -12,7 +12,13 @@ export default () => {
             A Reliable and Fault-Tolerant Wireless Data Communication System for
             Harsh Environment
           </div>
+          <div className="intro-lead-desc">
+            The system can accommodate different sensors to measure physical
+            attributes of interests in the area of deployment and communicate
+            measured data to local and remote destinations as desired.
+          </div>
         </div>
+
         <a className="btn btn-primary btn-xl text-uppercase" href="#devices">
           Learn More
         </a>

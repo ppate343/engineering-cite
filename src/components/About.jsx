@@ -1,119 +1,69 @@
 import React from "react";
 
-export default () => {
+export default ({ aboutLinks, aboutLinksInverted }) => {
   return (
     <section className="page-section" id="about">
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">About</h2>
           <h3 className="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
+            This system is designed to work reliably in harsh environment, for
+            example, an aftermath after a natural oor man-made disaster, an
+            accident or a hostile activity by some adversaries. Features of such
+            environments can be characterized by, but not limited to:
+            <li>Excessively high tempurates, pressure and humidity</li>
+            <li>Overly corrosive and toxic media</li>
+            <li>Damage to existing communication and power</li>
+            <li>High levels of nuclear radiation or biological hazards</li>
+            <li>Electromagnetic interference, pulses and narrowband jamming</li>
+            <li>Flooding and submerded conditions</li>
+            <li>Explosive atmosphere</li>
           </h3>
         </div>
+
         <ul className="timeline">
-          <li>
-            <div className="timeline-image">
-              <img
-                className="rounded-circle img-fluid"
-                src="assets/img/about/1.jpg"
-                alt="..."
-              />
-            </div>
-            <div className="timeline-panel">
-              <div className="timeline-heading">
-                <h4>2009-2011</h4>
-                <h4 className="subheading">Our Humble Beginnings</h4>
-              </div>
-              <div className="timeline-body">
-                <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="timeline-inverted">
-            <div className="timeline-image">
-              <img
-                className="rounded-circle img-fluid"
-                src="assets/img/about/2.jpg"
-                alt="..."
-              />
-            </div>
-            <div className="timeline-panel">
-              <div className="timeline-heading">
-                <h4>March 2011</h4>
-                <h4 className="subheading">An Agency is Born</h4>
-              </div>
-              <div className="timeline-body">
-                <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className="timeline-image">
-              <img
-                className="rounded-circle img-fluid"
-                src="assets/img/about/3.jpg"
-                alt="..."
-              />
-            </div>
-            <div className="timeline-panel">
-              <div className="timeline-heading">
-                <h4>December 2015</h4>
-                <h4 className="subheading">Transition to Full Service</h4>
-              </div>
-              <div className="timeline-body">
-                <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="timeline-inverted">
-            <div className="timeline-image">
-              <img
-                className="rounded-circle img-fluid"
-                src="assets/img/about/4.jpg"
-                alt="..."
-              />
-            </div>
-            <div className="timeline-panel">
-              <div className="timeline-heading">
-                <h4>July 2020</h4>
-                <h4 className="subheading">Phase Two Expansion</h4>
-              </div>
-              <div className="timeline-body">
-                <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="timeline-inverted">
-            <div className="timeline-image">
-              <h4>
-                Be Part
-                <br />
-                Of Our
-                <br />
-                Story!
-              </h4>
-            </div>
-          </li>
+          {aboutLinks &&
+            aboutLinks.map(({ image, heading, subheading, desc }, index) => (
+              <li>
+                <div className="timeline-image">
+                  <img
+                    className="rounded-circle img-fluid"
+                    src={image}
+                    alt="..."
+                  />
+                </div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4>{heading}</h4>
+                    <h4 className="subheading">{subheading}</h4>
+                  </div>
+                  <div className="timeline-body">
+                    <p className="text-muted">{desc}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          {aboutLinksInverted &&
+            aboutLinksInverted.map(({ image, heading, subheading, desc }) => (
+              <li className="timeline-inverted">
+                <div className="timeline-image">
+                  <img
+                    className="rounded-circle img-fluid"
+                    src={image}
+                    alt="..."
+                  />
+                </div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4>{heading}</h4>
+                    <h4 className="subheading">{subheading}</h4>
+                  </div>
+                  <div className="timeline-body">
+                    <p className="text-muted">{desc}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
         </ul>
       </div>
     </section>

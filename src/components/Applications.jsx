@@ -8,6 +8,12 @@ export default ({ applicationLinks }) => {
         <div className="row">
           <div className="col-lg-12 text-center">
             <h2 className="section-heading text-uppercase">applications</h2>
+
+            <li> Loss of Station power and communication infrastructure</li>
+            <li> Large loss of coolant accident (LOCA)</li>
+            <li> Earthquake, flood, tsunami, and/or terrorist attacks</li>
+            <li> Severe structure damage to containment</li>
+            <li> high level of radiation release</li>
           </div>
         </div>
         <div className="row">

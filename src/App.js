@@ -7,6 +7,7 @@ import Devices from "./components/Devices";
 import About from "./components/About";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
+import Design from "./components/Design";
 import Footer from "./components/Footer";
 import Socials from "./components/Socials";
 import NPP from "./assets/img/applications/1.jpg";
@@ -15,6 +16,13 @@ import MilitaryOp from "./assets/img/applications/3.jpg";
 import SpaceOp from "./assets/img/applications/4.jpg";
 import NavalShip from "./assets/img/applications/5.jpg";
 import HealthCare from "./assets/img/applications/6.jpg";
+import device1 from "./assets/img/devices/d1.jpg";
+import gateway from "./assets/img/devices/g1.jpg";
+import gatewayShield from "./assets/img/devices/g1s.jpg";
+import gatewayWShield from "./assets/img/devices/g1ws.jpg";
+import portable from "./assets/img/devices/p1.jpg";
+import displayPic from "./assets/img/dp.png";
+import filler from "./assets/img/npp.jpg";
 
 function App() {
   const applicationLinks = [
@@ -52,16 +60,72 @@ function App() {
 
   const deviceLinks = [
     {
-      title: "Threads",
-      caption: "Illustration",
+      title: "Device",
+      caption: "filler",
+      image: device1,
     },
     {
-      title: "Explore",
-      caption: "Graphic Design",
+      title: "Portable Monitoring System",
+      caption: "filler",
+      image: portable,
     },
     {
-      title: "Finish",
-      caption: "Identity",
+      title: "Gateway",
+      caption: "filler",
+      image: gateway,
+    },
+    {
+      title: "Gateway with Shielding",
+      caption: "filler",
+      image: gatewayShield,
+    },
+    {
+      title: "Gateway without Shielding",
+      caption: "filler",
+      image: gatewayWShield,
+    },
+  ];
+
+  const aboutLinks = [
+    {
+      heading: "timeline 1",
+      subheading: " ",
+      desc: "filler text",
+    },
+  ];
+
+  const aboutLinksInverted = [
+    {
+      heading: "timeline 2 ",
+      subheading: " ",
+      desc: "filler text",
+    },
+  ];
+
+  const teamLinks = [
+    {
+      image: displayPic,
+      name: "Ataul Bari",
+      role: "engineering prof",
+      email: "abari2@uwo.cauwo.ca",
+    },
+    {
+      image: displayPic,
+      name: "Jin Jiang",
+      role: "Professor at University of Western Ontario",
+      email: "jjiang@eng.uwo.ca",
+    },
+  ];
+
+  const designLinks = [
+    {
+      image: filler,
+    },
+    {
+      image: filler,
+    },
+    {
+      image: filler,
     },
   ];
   return (
@@ -69,12 +133,16 @@ function App() {
       <div className="App">
         <NavBar />
         <Header />
+        <Design designLinks={designLinks} />
         <Devices deviceLinks={deviceLinks} />
         <Applications applicationLinks={applicationLinks} />
-        <About />
-        <Team />
+        <About
+          aboutLinks={aboutLinks}
+          aboutLinksInverted={aboutLinksInverted}
+        />
+        <Team teamLinks={teamLinks} />
         <Contact />
-        <Socials />
+
         <Footer />
       </div>
     </>

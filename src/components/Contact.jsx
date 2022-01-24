@@ -7,7 +7,7 @@ export default () => {
         <div className="text-center">
           <h2 className="section-heading text-uppercase">Contact Us</h2>
           <h3 className="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
+
           </h3>
         </div>
 

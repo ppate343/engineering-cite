@@ -244,6 +244,11 @@ header.masthead .intro-text .intro-heading {
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
+.design-imagetitle p {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
 .service-heading {
   margin: 15px 0;
   text-transform: none;

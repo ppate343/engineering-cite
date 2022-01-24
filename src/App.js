@@ -120,12 +120,21 @@ function App() {
   const designLinks = [
     {
       image: filler,
+      imgTitle: "Modular Design",
+      imagedesc:
+        "The system employs a modular design approach where each module supports one specific communication network technology",
     },
     {
       image: filler,
+      imgTitle: "Communication over Multiple Media",
+      imagedesc:
+        "The system uses propriety wireless network-based communication technologies to transmit data ",
     },
     {
       image: filler,
+      imgTitle: "Reliable and Fault-tolerant Design",
+      imagedesc:
+        "This system utilizes a unique combination of long- and short-range wireless communication technologies to deliver data to destinations reliably",
     },
   ];
   return (

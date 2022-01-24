@@ -7,11 +7,11 @@ export default ({ deviceLinks }) => {
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">System Devices</h2>
-          <h3 className="section-subheading text-muted">
-            A data communication system that is highly reliable, resistant to
-            damages due to harsh deployment environments, and self-contained
-            with own independent power source and independent communication
-            infrastructure
+          <h3 className="text-muted">
+            The system can accommodate different sensors to measure
+            physical attributes of interests in the area of deployment and
+            communicate measured data to local and remote destinations
+            as desired.
           </h3>
         </div>
         <div className="row text-center">

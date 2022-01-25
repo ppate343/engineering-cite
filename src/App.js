@@ -88,19 +88,53 @@ function App() {
 
   const aboutLinks = [
     {
-      heading: "timeline 1",
+      image: device1,
+      heading: "Device",
       subheading: " ",
       desc: "filler text",
     },
+    {
+      imageInv: portable,
+      headingInv: "Portable Monitoring Station ",
+      subheadingInv: " ",
+      descInv: "filler text",
+    },
+    {
+      image: gateway,
+      heading: "Gateway",
+      subheading: " ",
+      desc: "filler text",
+    },
+    {
+      imageInv: gatewayShield,
+      headingInv: "Gateway with shielding",
+      subheadingInv: " ",
+      descInv: "filler text",
+    },
+    {
+      image: gatewayWShield,
+      heading: "Gateway Without Shielding",
+      subheading: " ",
+      desc: "filler text",
+    },
+    
+    
   ];
 
-  const aboutLinksInverted = [
-    {
-      heading: "timeline 2 ",
-      subheading: " ",
-      desc: "filler text",
-    },
-  ];
+  // const aboutLinksInverted = [
+  //   {
+  //     image: portable,
+  //     heading: "Portable Monitoring Station ",
+  //     subheading: " ",
+  //     desc: "filler text",
+  //   },
+  //   {
+  //     image: gatewayShield,
+  //     heading: "Gateway with shielding",
+  //     subheading: " ",
+  //     desc: "filler text",
+  //   },
+  // ];
 
   const teamLinks = [
     {
@@ -147,7 +181,6 @@ function App() {
         <Applications applicationLinks={applicationLinks} />
         <About
           aboutLinks={aboutLinks}
-          aboutLinksInverted={aboutLinksInverted}
         />
         <Team teamLinks={teamLinks} />
         <Contact />

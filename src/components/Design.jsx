@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 import ProtectionDiagram from "../assets/img/protection.jpg"
 export default ({ designLinks }) => {
   return (
@@ -25,7 +25,7 @@ export default ({ designLinks }) => {
                     <h4>{title}</h4>
                     <p className="text-muted">{desc}</p>
                     <p className="text-muted">{minidesc}</p>
-                    <img className="rounded" src={image} alt="..." href=""/>
+                    <img className="rounded" src={image} alt="..." href="" />
                     <h4 className="design-imagetitle">{imgTitle}</h4>
                     <p className="text-muted">{imagedesc} </p>
                   </div>
@@ -33,9 +33,20 @@ export default ({ designLinks }) => {
               )
             )}
         </div>
-        <img src={ProtectionDiagram}></img>
-        <p className="text-muted">Protection Under Accident Controls</p>
-       </div>
+        <div className='row squarepicture' >
+          <div className='small-square'>
+            <div className="small-square-pic">
+              <img src={ProtectionDiagram}></img>
+
+            </div>
+            <p className="text-muted">Protection Under Accident Controls</p>
+
+          </div>
+
+        </div>
+
+
+      </div>
     </section>
   );
 };

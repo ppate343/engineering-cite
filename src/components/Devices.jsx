@@ -14,18 +14,16 @@ export default ({ deviceLinks }) => {
             measured data to local and remote destinations as desired.
           </p>
         </div>
-        <div className="device-list"></div>
-        <div className="container">
-          <h5 className="text-center">Device Highlights</h5>
-          <img src={DeviceDiagram}></img>
-          <p className="text-muted">
-            Multiple diverse wireless channels for reliable data transfer
-          </p>
-          <h5 className="text-center">System Highlights</h5>
-          <img src={SystemDiagram}></img>
-          <p className="text-muted">
-            Can be deployed in harsh areas in the presence of obstacles
-          </p>
+        <div className='row squarepicturelight' >
+          <div className='small-square-light'>
+            <div className="small-square-pic-light">
+              <img src={DeviceDiagram}></img>
+
+            </div>
+            <p className="text-muted">            Multiple diverse wireless channels for reliable data transfer</p>
+
+          </div>
+
         </div>
       </div>
     </section>

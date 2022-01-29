@@ -162,3 +162,20 @@
                
             ))}
         </ul>
+
+
+        //devices
+      
+        <div className="device-list"></div>
+        <div className="container">
+          <h5 className="text-center">Device Highlights</h5>
+          <img src={DeviceDiagram}></img>
+          <p className="text-muted">
+            Multiple diverse wireless channels for reliable data transfer
+          </p>
+          <h5 className="text-center">System Highlights</h5>
+          <img src={SystemDiagram}></img>
+          <p className="text-muted">
+            Can be deployed in harsh areas in the presence of obstacles
+          </p>
+        </div>

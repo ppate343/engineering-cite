@@ -1,7 +1,64 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 import ProtectionDiagram from "../assets/img/protection.jpg"
+import { makeStyles } from "@material-ui/core";
+
+
+
+const useStyles = makeStyles(() => ({
+  container: {
+    // justifyContent: 'center',
+
+    backgroundColor: 'transparent',
+    height: 800,
+    width: 'auto',
+  },
+
+  leftBox: {
+    position: 'absolute',
+    justifyContent: 'center',
+
+    backgroundColor: 'white',
+    height: 500,
+    width: 600,
+    marginTop: 150,
+
+  },
+  RightBox: {
+
+
+    backgroundColor: "black",
+    height: 800,
+    width: 700,
+    marginLeft: 400,
+
+  },
+  ImageContainer: {
+    display: 'flex',
+    margin: 'auto',
+    justifyContent: 'center',
+    marginTop: 50,
+
+  },
+  containterText: {
+    color: 'white',
+    fontSize: 80,
+
+
+  }
+}))
+
+
+
+
+
+
+
 export default ({ designLinks }) => {
+
+
+  const style = useStyles();
+
   return (
     <section className="page-section bg-light" id="design">
       <div className="container">
@@ -33,19 +90,25 @@ export default ({ designLinks }) => {
               )
             )}
         </div>
-        <div className='row squarepicture' >
-          <div className='small-square'>
-            <div className="small-square-pic">
-              <img src={ProtectionDiagram}></img>
+
+        <div className={style.container}>
+          <div className={style.leftBox}>
+            <div className={style.ImageContainer}><img className="img-thumbnail" src={ProtectionDiagram}></img></div>
+            <p className="text-muted">Protection Under Accident Controls</p>
+          </div >
+          <div className={style.RightBox}>
+            <div className="text-muted">
+
+              <li>Explosion-proof casing</li>
+              <li>Peak temperature: 650oC</li>
+              <li>Pressure: 1.6MPa</li>
+              <li>Resistance to Fire, corrosion, humidity, gas and air born particles</li>
+              <li>Radiation Shielding</li>
 
             </div>
-            <p className="text-muted">Protection Under Accident Controls</p>
-
           </div>
-
+          <div></div>
         </div>
-
-
       </div>
     </section>
   );

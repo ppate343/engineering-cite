@@ -1,7 +1,60 @@
 import React from "react";
 import Fukushima from "../assets/img/applications/7.jpg";
+import { makeStyles } from "@material-ui/core";
 
-export default ({ applicationLinks }) => {
+
+const useStyles = makeStyles(() => ({
+  container: {
+    // justifyContent: 'center',
+
+    backgroundColor: 'transparent',
+    height: 800,
+    width: 'auto',
+  },
+
+  leftBox: {
+    position: 'absolute',
+    justifyContent: 'center',
+
+    backgroundColor: 'white',
+    height: 500,
+    width: 600,
+    marginTop: 150,
+
+  },
+  RightBox: {
+
+
+    backgroundColor: "black",
+    height: 800,
+    width: 700,
+    marginLeft: 400,
+
+  },
+  ImageContainer: {
+    display: 'flex',
+    margin: 'auto',
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+  },
+  containterText: {
+    color: 'white',
+    fontSize: 20,
+    justifyContent: 'center',
+
+
+  }
+}))
+
+
+
+
+
+const Applications = ({ applicationLinks }) => {
+
+  const style = useStyles();
+
   return (
     <section className="bg-light page-section" id="applications">
       <div className="container">
@@ -9,7 +62,7 @@ export default ({ applicationLinks }) => {
           <div className="col-lg-12 text-center">
             <h2 className="section-heading text-uppercase">applications</h2>
 
-            
+
           </div>
         </div>
         <div className="row">
@@ -45,19 +98,32 @@ export default ({ applicationLinks }) => {
             explosions, radiation, leaks, etc. causing damages to conventional
             communication infrastructure & systems.
           </h3>
-          <div className="col-lg-12 text-center">
-            <h2 className="app-example">Fukushima Nuclear Disaster, 2011</h2>
-            <img src={Fukushima}></img>
-            <h3 className="section-subheading text-muted">
-              Fukushima nuclear disaster, 2011. Measured data could not be
-              collected during the first few hours of the accident because all
-              communication systems were down. The developed system could have
-              provided much needed information about the plant during that
-              critical time to help with accident mitigation.
-            </h3>
+          <div className={style.container}>
+            <div className={style.leftBox}>
+              <div className={style.ImageContainer}>
+                <img className="img-thumbnail" src={Fukushima} alt=''>
+                </img>
+              </div>
+              <p className="text-muted">Fukushima Nuclear Disaster, 2011</p>
+            </div >
+            <div className={style.RightBox}>
+              <div className={style.containterText}>
+                Fukushima nuclear disaster, 2011. Measured data could not be
+                collected during the first few hours of the accident because all
+                communication systems were down. The developed system could have
+                provided much needed information about the plant during that
+                critical time to help with accident mitigation.
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 };
+
+export default Applications;
+
+
+

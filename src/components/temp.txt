@@ -179,3 +179,50 @@
             Can be deployed in harsh areas in the presence of obstacles
           </p>
         </div>
+
+
+
+
+        // device container jsx from before
+        <div className='row squarepicturelight' >
+          <div className='small-square-light'>
+            <div className="small-square-pic-light">
+              <img src={DeviceDiagram}></img>
+
+            </div>
+            <p className="text-muted">            Multiple diverse wireless channels for reliable data transfer</p>
+
+          </div>
+
+        </div>
+
+
+
+        // design containers
+
+        <div className='row squarepicture' >
+          <div className='small-square'>
+            <div className="small-square-pic">
+              <img src={ProtectionDiagram}></img>
+
+            </div>
+            <p className="text-muted">Protection Under Accident Controls</p>
+
+          </div>
+
+        </div>
+
+
+////// applivation fukushima
+
+<div className="col-lg-12 text-center">
+            <h2 className="app-example">Fukushima Nuclear Disaster, 2011</h2>
+            <img src={Fukushima}></img>
+            <h3 className="section-subheading text-muted">
+              Fukushima nuclear disaster, 2011. Measured data could not be
+              collected during the first few hours of the accident because all
+              communication systems were down. The developed system could have
+              provided much needed information about the plant during that
+              critical time to help with accident mitigation.
+            </h3>
+          </div>

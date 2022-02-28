@@ -54,7 +54,7 @@ const useStyles = makeStyles(() => ({
 
 
 
-export default ({ designLinks }) => {
+const Design = ({ designLinks }) => {
 
 
   const style = useStyles();
@@ -68,7 +68,6 @@ export default ({ designLinks }) => {
             environments, for example, an aftermath after a natural
             or man-made disaster, an accident or a hostile activity by
             some adversaries. Such environments inlude but not limited to excessively high temperatures pressure, humidty, overly corrosive  and toxic media, explosive atmosphere, damage to existing communication and power infrastructure, high levels of nuclear radiation or biological hazards, electromagnetic interference, pulses and narrowband jamming, flooding and submerged conditions.</p>
-          <h3 className="section-subheading text-muted"></h3>
         </div>
         <div className="row">
           {designLinks &&
@@ -93,7 +92,10 @@ export default ({ designLinks }) => {
 
         <div className={style.container}>
           <div className={style.leftBox}>
-            <div className={style.ImageContainer}><img className="img-thumbnail" src={ProtectionDiagram}></img></div>
+            <div className={style.ImageContainer}>
+              <img className="img-thumbnail" src={ProtectionDiagram} alt=''>
+              </img>
+            </div>
             <p className="text-muted">Protection Under Accident Controls</p>
           </div >
           <div className={style.RightBox}>
@@ -107,9 +109,10 @@ export default ({ designLinks }) => {
 
             </div>
           </div>
-          <div></div>
         </div>
       </div>
     </section>
   );
 };
+
+export default Design; 

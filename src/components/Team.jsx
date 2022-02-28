@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ teamLinks }) => {
+const Team = ({ teamLinks }) => {
   return (
     <section className="page-section bg-light" id="team">
       <div className="container">
@@ -43,3 +43,4 @@ export default ({ teamLinks }) => {
     </section>
   );
 };
+export default Team;

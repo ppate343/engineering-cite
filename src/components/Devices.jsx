@@ -41,13 +41,7 @@ const useStyles = makeStyles(() => ({
 
 
 
-
-
-
-
-
-
-export default () => {
+const Devices = () => {
 
   const style = useStyles();
 
@@ -64,6 +58,9 @@ export default () => {
         </div>
         <div className={style.container}>
           <div className={style.RightBox}>
+            <div>
+              <img src={SystemDiagram} alt=" "></img>
+            </div>
           </div>
           <div className={style.leftBox}>
           </div >
@@ -73,3 +70,5 @@ export default () => {
     </section>
   );
 };
+
+export default Devices; 

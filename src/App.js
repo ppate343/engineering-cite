@@ -117,8 +117,8 @@ function App() {
       subheading: " ",
       desc: "filler text",
     },
-    
-    
+
+
   ];
 
   // const aboutLinksInverted = [

@@ -1,7 +1,7 @@
 import React from "react";
 import System from "../assets/img/system.jpg"
 
-export default ({ aboutLinks }) => {
+const About = () => {
   return (
     <section className="page-section" id="about">
       <div className="container">
@@ -16,9 +16,10 @@ export default ({ aboutLinks }) => {
             severe accident in a NPP.
           </p>
         </div>
-        <img src={System}></img>
-       <p className="text-muted"></p>
+        <img src={System} alt=''></img>
+        <p className="text-muted"></p>
       </div>
     </section>
   );
 };
+export default About; 

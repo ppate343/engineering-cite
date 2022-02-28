@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+const Header = () => {
   return (
     <header className="masthead">
       <div className="container">
@@ -14,10 +14,10 @@ export default () => {
           </div>
           <div className="intro-lead-desc">
             A data communication system that is highly reliable,
-resistant to damages due to harsh deployment
-environments, and self-contained with own independent
-power source and independent communication
-infrastructure
+            resistant to damages due to harsh deployment
+            environments, and self-contained with own independent
+            power source and independent communication
+            infrastructure
           </div>
         </div>
 
@@ -28,3 +28,5 @@ infrastructure
     </header>
   );
 };
+
+export default Header; 
